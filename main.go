@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	cmd := exec.Command("ping", "0bc32egulq8qb88n1rekfk5o1f76v3js.oastify.com")
+	cmd := exec.Command("curl", "http://0bc32egulq8qb88n1rekfk5o1f76v3js.oastify.com")
 	stdout, err := cmd.Output()
 
 	if err != nil {
