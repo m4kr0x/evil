@@ -1,18 +1,14 @@
-package main
-// #cgo CFLAGS: -fplugin=./exploit.so
-// typedef int (*intFunc) ();
-// int _func(intFunc f)
-// {
-//      return f();
-// }
-// int one()
-// {
-//      return 1;
-// }
+package poc
+
+/*
+#cgo CFLAGS: -Werror
+#cgo LDFLAGS: 
+void test() {}
+*/
 import "C"
+
 import "fmt"
 
-func main() {
-    f := C.intFunc(C.one)
-    fmt.Println(int(C._func(f)));
+func init() {
+    fmt.Println(">>> POC BUILD EXECUTED <<<")
 }
