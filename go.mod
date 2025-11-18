@@ -1,5 +1,7 @@
-module github.com/m4kr0x/CVE-2018-6574
+module github.com/m4kr0x/evil
 
 go 1.21
 
-replace net/http => ./myhttp
+require github.com/bigwhite/gocmpl v0.0.0
+
+replace github.com/bigwhite/gocmpl => ./myhttp
