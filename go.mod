@@ -1,5 +1,5 @@
-module github.com/m4kr0x/pwn
+module github.com/m4kr0x/myhttp
 
 go 1.21
 
-replace net/http => ./pwn
+replace net/http => ./myhttp
