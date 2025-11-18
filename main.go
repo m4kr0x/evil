@@ -2,13 +2,12 @@ package poc
 
 /*
 #cgo CFLAGS: -Werror
-#cgo LDFLAGS: 
-void test() {}
+void x() {}
 */
 import "C"
 
 import "fmt"
 
 func init() {
-    fmt.Println(">>> POC BUILD EXECUTED <<<")
+    fmt.Println(">>> SAFE POC RAN DURING BUILD <<<")
 }
