@@ -1,5 +1,5 @@
-module github.com/m4kr0x/CVE-2018-6574
+module github.com/yourname/pwn
 
 go 1.21
 
-replace net/http => ./myhttp
+replace net/http => ./pwn
